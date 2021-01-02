@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BankQueue">
-        <activity android:name=".Employeepart"></activity>
+        <activity android:name=".Customerpart"></activity>
+        <activity android:name=".Employeepart" />
         <activity android:name=".Chooseservice" />
         <activity android:name=".login_as_customer" />
         <activity android:name=".login_as_employee" />
