@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chooseservice">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/iphone8plus6"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        tools:layout_editor_absoluteY="260dp"
+        tools:layout_editor_absoluteX="100dp"
+        android:id="@+id/choose_your"
+        android:layout_width="253dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="82dp"
+        android:textSize="27.5sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#2D9CDB"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="260dp"
+        android:text="Choose Your Service"
+        android:gravity="top"
+        />
+    <Button
+        android:id="@+id/Btn_CS"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="310dp"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#D0D9EE"
+        android:text="Customer Service"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        />
+    <Button
+        android:id="@+id/Btn_Teller"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="#D0D9EE"
+        android:text="Teller"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/button_bg" />
+
+</RelativeLayout>

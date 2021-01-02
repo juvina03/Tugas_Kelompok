@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login_as_employee">
+    tools:context=".login_as_employee"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <View
         android:layout_width="match_parent"
@@ -14,7 +16,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/iphone8plus1" />
+        android:src="@drawable/iphone8plus1"
+        android:contentDescription="@string/todo" />
 
     <EditText
         android:layout_width="310dp"
@@ -24,20 +27,20 @@
         android:paddingLeft="16dp"
         android:textSize="24dp"
         android:shadowColor="@color/black"
-        android:background="#D0D9EE"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="430dp"
-        tools:ignore="MissingConstraints" />
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="430dp"
+        />
 
     <TextView
         android:layout_width="310dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="350dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="350dp"
         android:text="Login Employee"
         android:textColor="#FFF"
         android:textSize="28dp"
-        tools:ignore="MissingConstraints" />
+        />
 
     <EditText
         android:layout_width="310dp"
@@ -47,10 +50,10 @@
         android:paddingLeft="16dp"
         android:textSize="24dp"
         android:shadowColor="@color/black"
-        android:background="#D0D9EE"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="510dp"
-        tools:ignore="MissingConstraints" />
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="510dp"
+        />
 
     <Button
         android:layout_width="310dp"
@@ -59,10 +62,10 @@
         android:text="Sign in"
         android:textColor="@color/black"
         android:textAllCaps="false"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="590dp"
+        android:textSize="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="590dp"
         android:background="@drawable/button_bg"
-        tools:ignore="MissingConstraints" />
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

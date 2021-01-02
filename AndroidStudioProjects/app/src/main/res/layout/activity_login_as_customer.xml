@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login_as_customer">
+    tools:context=".login_as_customer"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <View
         android:layout_width="match_parent"
@@ -14,77 +16,78 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/iphone8plus1" />
+        android:src="@drawable/iphone8plus1"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:layout_width="310dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="350dp"
+        android:layout_marginLeft= "30dp"
+        android:layout_marginTop="350dp"
         android:text="Login"
         android:textColor="#FFF"
         android:textSize="28dp"
-        tools:ignore="MissingConstraints" />
+        />
 
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="500dp"
         android:layout_height="40dp"
         android:text="Don't have an account?"
         android:textColor="#FFF"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="590dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="590dp" />
 
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:text="Sign Up"
         android:textColor="#00F"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="635dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="635dp" />
 
     <Button
         android:layout_width="345dp"
         android:layout_height="70dp"
+        android:backgroundTint="#D0D9EE"
         android:text="Continue With Email"
         android:textColor="#3a3a3a"
         android:textAllCaps="false"
         android:textSize="20dp"
         android:paddingLeft="10dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="410dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="410dp"
         android:background="@drawable/button_bg"
-        tools:ignore="MissingConstraints" />
+        />
     <Button
         android:layout_width="345dp"
         android:layout_height="70dp"
+        android:backgroundTint="#D0D9EE"
         android:text="Continue With Facebook"
         android:textColor="#3a3a3a"
         android:textAllCaps="false"
         android:textSize="20dp"
         android:paddingLeft="50dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="490dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="490dp"
         android:background="@drawable/button_bg"
-        tools:ignore="MissingConstraints" />
+        />
 
     <Button
         android:layout_width="36dp"
         android:layout_height="36dp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="428dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="428dp"
         android:foreground="@drawable/email_1"
-        tools:ignore="MissingConstraints" />
+        />
 
     <Button
         android:layout_width="36dp"
         android:layout_height="36dp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="508dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="508dp"
         android:foreground="@drawable/facebook"
-        tools:ignore="MissingConstraints" />
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

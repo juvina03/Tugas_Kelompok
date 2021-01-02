@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,19 +16,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/iphone8plus1"
-        android:contentDescription="@string/todo"/>
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:layout_width="310dp"
         android:layout_height="60dp"
         android:paddingLeft="16dp"
-        android:text="@string/you_login_as"
+        android:text="You login as?"
         android:textColor="#FFF"
-        android:textSize="35sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="335dp"
-        tools:ignore="MissingConstraints"
-        android:paddingStart="16dp" />
+        android:textSize="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="335dp" />
 
     <Button
         android:id="@+id/buttonascustomer"
@@ -35,27 +34,25 @@
         android:layout_height="60dp"
         android:background="@drawable/button_bg"
         android:backgroundTint="#D0D9EE"
-        android:text="@string/customer"
+        android:text="Customer"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="423dp"
-        tools:ignore="MissingConstraints"
-        tools:targetApi="lollipop" />
+        android:textSize="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="423dp"
+        />
     <Button
         android:id="@+id/buttonasemployee"
         android:layout_width="310dp"
         android:layout_height="60dp"
         android:backgroundTint="#D0D9EE"
-        android:text="@string/employee"
+        android:text="Employee"
         android:textColor="@color/black"
         android:textAllCaps="false"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="490dp"
+        android:textSize="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="490dp"
         android:background="@drawable/button_bg"
-        tools:ignore="MissingConstraints"
-        tools:targetApi="lollipop" />
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
