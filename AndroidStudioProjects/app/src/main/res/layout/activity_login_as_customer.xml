@@ -80,6 +80,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="428dp"
         android:foreground="@drawable/email_1"
+        android:scaleType = "fitXY"
         />
 
     <Button
@@ -88,6 +89,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="508dp"
         android:foreground="@drawable/facebook"
+        android:scaleType = "fitXY"
         />
 
 </RelativeLayout>

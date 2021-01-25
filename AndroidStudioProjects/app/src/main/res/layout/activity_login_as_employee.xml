@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login_as_employee"
+    tools:context=".login_as_customer"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <View
@@ -19,53 +19,63 @@
         android:src="@drawable/iphone8plus1"
         android:contentDescription="@string/todo" />
 
-    <EditText
-        android:layout_width="310dp"
-        android:layout_height="60dp"
-        android:hint="Username"
-        android:inputType="text"
-        android:paddingLeft="16dp"
-        android:textSize="24dp"
-        android:shadowColor="@color/black"
-        android:background="@drawable/button_bg"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="430dp"
-        />
-
     <TextView
         android:layout_width="310dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft= "30dp"
         android:layout_marginTop="350dp"
         android:text="Login Employee"
         android:textColor="#FFF"
         android:textSize="28dp"
         />
+    <EditText
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="395dp"
+        android:layout_marginLeft="50dp"
+        android:background="#D0D9EE"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingLeft="50dp"
+        android:shadowColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
 
     <EditText
         android:layout_width="310dp"
         android:layout_height="60dp"
-        android:hint="Password"
-        android:inputType="text"
-        android:paddingLeft="16dp"
-        android:textSize="24dp"
-        android:shadowColor="@color/black"
-        android:background="@drawable/button_bg"
+        android:layout_marginTop="470dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="510dp"
-        />
+        android:background="#D0D9EE"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingLeft="50dp"
+        android:shadowColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:layout_width="310dp"
-        android:layout_height="60dp"
+        android:layout_width="345dp"
+        android:layout_height="70dp"
         android:backgroundTint="#D0D9EE"
-        android:text="Sign in"
-        android:textColor="@color/black"
+        android:text="Continue With Facebook"
+        android:textColor="#3a3a3a"
         android:textAllCaps="false"
-        android:textSize="24dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="590dp"
+        android:textSize="20dp"
+        android:paddingLeft="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="540dp"
         android:background="@drawable/button_bg"
         />
+
 
 </RelativeLayout>
