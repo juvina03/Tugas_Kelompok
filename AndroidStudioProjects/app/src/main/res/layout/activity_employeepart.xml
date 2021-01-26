@@ -47,7 +47,7 @@
         android:layout_width="323dp"
         android:layout_height="174dp"
         android:background="@drawable/bordertopbottom"
-        android:text="001"
+        android:text="000"
         android:textColor="@color/black"
         android:textSize="100dp"
         android:textAlignment="center"
@@ -55,6 +55,7 @@
         android:layout_marginLeft="40dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="326dp"
+        android:id="@+id/texttambah"
         />
     <Button
         android:backgroundTint="@color/grey"
@@ -66,5 +67,6 @@
         android:text="Change Queue Number"
         android:textColor="@color/black"
         android:textSize="18dp"
+        android:id="@+id/buttontambah"
         />
 </RelativeLayout>
